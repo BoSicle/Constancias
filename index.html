@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="mozilla learning network" name="mln:tags">
+  <meta content="mln" name="mln:tags">
+
+  <!-- styling -->
+  <link rel="stylesheet" href="https://stuff.webmaker.org/makerstrap/v0.1.7/makerstrap.complete.min.css">
+  <!--  extra bold font weight -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet" type="text/css">
+  <!-- a fancy font for the signature ;) -->
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" type="text/css">
+
+  <!-- time to style the lovebomb -->
+  <style>
+    html {
+      display: inline-flex;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      background-color: darkred;
+      height: 10rem;
+      width: 100%;
+      color: #294d50;
+      
+    }
+
+    .certificate {
+      
+      width: 100%;
+      background-image:url(https://s3.amazonaws.com/digitaltrends-uploads-prod/2014/12/Mozilla-Firefox-donations.jpg);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding-bottom: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    header {
+      height: 20rem;
+      width: 78%;
+      background-image: url(https://frsela.github.io/PresentacionFirefoxOS_UAX/res/mozilla_wordmark.png);
+      background-position: center;
+      background-size:contain;
+      background-repeat: no-repeat;
+
+      /* this clever trick hides the text from view while allowing screen readers to see it still */
+     text-indent: -9999px;
+    }
+
+    h1.reason + h2,
+    .recipient,
+    .details,
+    .date {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      font-weight: 300;
+      line-height: 1.4
+    }
+
+    h1.reason {
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+    h1.reason + h2 {
+      margin-bottom: 0;
+    }
+
+    .recipient, .issuer {
+      border-bottom: 1px solid #aaa;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.1;
+      margin-bottom: 2rem;
+    }
+    .recipient {
+      color: #08088A;
+      font-size: 7rem;
+    }
+    .issuer {
+      font-size: 4rem;
+      line-height: 2.4rem;
+      font-family: 'Great Vibes', cursive;
+    }
+
+    .date {
+      font-weight: normal;
+    }
+
+    .sticker {
+      height: 18rem;
+      width: 18rem;
+      margin-top: -6rem;
+      background-image: url(https://mozillawebmakerproxy.net/1073c4b76d862dc17867af25fb09d3cc1e1e8016?url=http://stuff.webmaker.org.s3.amazonaws.com/teach.mozilla.org/makes/makerparty_certificatesticker.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .sticker .fa {
+      line-height: 18rem;
+      font-size: 100px;
+      color: #2E2EFE;
+      text-shadow: 0px 4px 0px #b3b3b3;
+    }
+
+    footer .lead {
+      font-size: 1.4rem;
+      margin-bottom: 1.4rem;
+    }
+  </style>
+  
+  <title>Certificado Mozilla México</title>
+  <script>(function fixExternalLinks() {
+  function pointToBlank(a) {
+    var href = a.getAttribute("href");
+    if (href && href.indexOf("//") > -1) {
+      // this is an external link.
+      if(!a.getAttribute("target")) {
+        a.setAttribute("target", "_blank");
+      }
+    }
+  }
+  function fixLinks() {
+    document.removeEventListener("DOMContentLoaded", fixLinks);
+    var anchors = document.querySelectorAll("a");
+    var asArray = Array.prototype.slice.call(anchors);
+    asArray.forEach(function(a) {
+      pointToBlank(a);
+    });
+  }
+  document.addEventListener("DOMContentLoaded", fixLinks);
+}())</script>
+  <style type="text/css">:root .container > .infoBoxList > .shareInfoBox
+    {display:none !important;}</style></head>
+<body class="container">
+
+  <div class="row">
+    <section class="col-xs-12 col-lg-10 col-lg-offset-1 certificate">
+      <header>
+        <h1>MLN-Mozilla México</h1>
+        
+      </header>
+
+      <div class="row">
+        <article class="col-md-9 col-md-offset-0">
+          <h1 class="reason">Certificado de Asistencia</h1>
+          <h2>Que es entregado a:</h2>
+
+          <div class="recipient">&lt;Nombre del morro(a)&gt;</div>
+
+          <p class="details">
+            Por ayudar a crear una web abierta y más segura para todos.
+          </p>
+
+          <div class="date">9 de Marzo de 2016</div>
+        </article>
+      </div>
+
+      <div class="row">
+        <footer>
+          <div class="hidden-xs col-sm-2 col-sm-offset-1">
+            <div class="sticker"><i class="fa fa-star"></i></div>
+          </div>
+          <div class="col-sm-3">
+            <p class="lead">Entregado por</p>
+            <div class="issuer">Mozilla México</div>
+          </div>
+          <div class="hidden-xs col-sm-2">
+            <img src="http://somethin-else.org/public/Mozilla_Community_Logo.png" class="img-responsive">
+          </div>          
+        </footer>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
