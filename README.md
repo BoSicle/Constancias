@@ -1,2 +1,2 @@
 # Constancias
-Constancias Web Mozilla México
+Constancias HTML para eventos
